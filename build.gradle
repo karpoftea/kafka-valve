@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'il.karpov.kafka.valve'
+version '0.1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useTestNG()
+}
+
+dependencies {
+    testCompile 'org.testng:testng:6.10'
+    testCompile 'org.hamcrest:hamcrest-library:2.1'
+}
